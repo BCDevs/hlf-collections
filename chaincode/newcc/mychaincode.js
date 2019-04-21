@@ -45,10 +45,7 @@ var Chaincode = class {
             await stub.putState(a,Buffer.from(aBalance.toString()));
             await stub.putState(b,Buffer.from(bBalance.toString()));
 
-            aBalance = await stub.getState(a);
-            bBalance = await stub.getState(b);
-            console.info(a + " balance is Rs" + aBalance);
-            console.info(b + " balance is Rs" + bBalance);
+            
             return shim.success(Buffer.from("Transfer successfull!"));
 
         }
