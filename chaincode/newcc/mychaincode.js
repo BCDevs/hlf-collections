@@ -80,7 +80,7 @@ let Chaincode = class {
       Holder: args[4]
     };
 
-    await stub.putState(args[0], Buffer.from(JSON.stringify(car)));
+    await stub.putState(args[0], Buffer.from(JSON.stringify(tuna)));
     console.info('============= END : Tuna Added===========');
   }
 
