@@ -66,7 +66,7 @@ let Chaincode = class {
     console.info('============= END : Initialize Ledger ===========');
   }
 
-  async AddTuna(stub, args) {
+  async addTuna(stub, args) {
     console.info('============= START : Adding Tuna===========');
     if (args.length != 5) {
       throw new Error('Incorrect number of arguments. Expecting 5');
