@@ -6,10 +6,15 @@ This Repository utilizes ```fabric-samples/basic-network```
 
 Tuna fishing 🎣 supplychain on nodejs for demonstration.
 
+###### Quick Demo:
+
 ```
-cd client
+git clone https://github.com/Salmandabbakuti/hlf-tunaSupplychain.git
+
+cd hlf-tunaSupplychain/client
 
 ./start.sh
+
 ```
 for making calls from client Side (From```client/``` directory),run:
 ```
