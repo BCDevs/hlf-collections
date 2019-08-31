@@ -1,4 +1,4 @@
-use strict';
+'use strict';
 
 const { FileSystemWallet, Gateway } = require('fabric-network');
 const path = require('path');
