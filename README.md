@@ -18,6 +18,10 @@ cd hlf-tunaSupplychain/client
 ```
 for making calls from client Side (From```client/``` directory),run:
 ```
+npm i fabric-ca-client
+
+npm i fabric-network
+
 npm install
 
 node enrollAdmin.js
