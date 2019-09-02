@@ -7,7 +7,7 @@
     "blockToLive":1000000
     },
     {
-    "name": "collectionPrivate",
+    "name": "privateCollection",
     "policy": "OR('Org2MSP.member')",
     "requiredPeerCount": 0,
     "maxPeerCount": 3,
