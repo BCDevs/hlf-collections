@@ -26,7 +26,10 @@ cd ..
 cp -r chaincode hlf-testnet
 
 cd hlf-testnet
+chmod a+x generate.sh
+chmod a+x start.sh
 
+./generate.sh
 ./start.sh
 
 docker ps -a
