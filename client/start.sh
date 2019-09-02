@@ -9,7 +9,7 @@ rm -rf hfc-key-store
 
 # Remove chaincode docker image
 
-STOP AND DELETE THE DOCKER CONTAINERS
+#STOP AND DELETE THE DOCKER CONTAINERS
 docker ps -aq | xargs -n 1 docker stop
 docker ps -aq | xargs -n 1 docker rm -v
 
@@ -38,7 +38,7 @@ docker ps -a
 echo 'Installing chaincode..'
 docker exec -it cli peer chaincode install -n mycc -v 1.0 -p "/opt/gopath/src/github.com/chaincode/newcc" -l "node"
 
-docker exec -it cl2 peer chaincode install -n mycc -v 1.0 -p "/opt/gopath/src/github.com/chaincode/newcc" -l "node"
+docker exec -it cli2 peer chaincode install -n mycc -v 1.0 -p "/opt/gopath/src/github.com/chaincode/newcc" -l "node"
 docker exec -it cli3 peer chaincode install -n mycc -v 1.0 -p "/opt/gopath/src/github.com/chaincode/newcc" -l "node"
 
 
