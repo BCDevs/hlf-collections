@@ -52,13 +52,13 @@ let Chaincode = class {
 
     var product = {
       docType: 'products',
-      productId: args[1]
+      productId: args[1],
       name: args[2],
       price: args[3],
       seller: args[4]
     };
 
-    await stub.putPrivateData(args[0],args[1] Buffer.from(JSON.stringify(product)));
+    await stub.putPrivateData(args[0],args[1], Buffer.from(JSON.stringify(product)));
     console.info('============= END : Private Product Added===========');
   }
 };
