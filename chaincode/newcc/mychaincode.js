@@ -34,7 +34,7 @@ let Chaincode = class {
     }
     
 
-    let productAsBytes = await stub.GetPrivateData(args[0],args[1]); 
+    let productAsBytes = await stub.getPrivateData(args[0],args[1]); 
     if (!productAsBytes || productAsBytes.toString().length <= 0) {
       throw new Error('Product does not exist: ');
     }
